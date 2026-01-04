@@ -53,7 +53,7 @@ const ProductListScreen = ({ navigation }: any) => {
     });
   }, [products, debouncedSearch, selectedCategory, sortBy]);
 
-  if (loading) return <ActivityIndicator size="large" color="#6200ee" style={styles.center} />;
+  if (loading) return <ActivityIndicator size="large" color="#3F3F4E" style={styles.center} />;
 
   return (
     <View style={styles.container}>

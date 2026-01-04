@@ -42,7 +42,7 @@ const ProductDetailScreen = ({ route }: Props) => {
   if (loading) {
     return (
       <View style={styles.center}>
-        <ActivityIndicator size="large" color="#6200ee" />
+        <ActivityIndicator size="large" color="#3F3F4E" />
       </View>
     );
   }
@@ -82,12 +82,13 @@ const ProductDetailScreen = ({ route }: Props) => {
           <Text style={styles.sectionHeader}>Description</Text>
           <Text style={styles.description}>{product.description}</Text>
 
+{          /* Future Improvement
           <TouchableOpacity 
             style={styles.button} 
             onPress={() => Alert.alert("Success", "Product added to cart!")}
           >
             <Text style={styles.buttonText}>Add to Cart</Text>
-          </TouchableOpacity>
+          </TouchableOpacity>*/}
         </View>
       </ScrollView>
     </SafeAreaView>
